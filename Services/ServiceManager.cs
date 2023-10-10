@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    internal class ServiceManager : IServiceManager
+    public class ServiceManager : IServiceManager
     {
         private readonly Lazy<IBookService> _bookService;
         public ServiceManager(IRepositoryManager repositoryManager)

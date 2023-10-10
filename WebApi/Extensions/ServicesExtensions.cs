@@ -2,7 +2,7 @@
 using Repositories.Contracts;
 using Repositories.EFCore;
 using Services.Contracts;
-
+using Services;
 namespace WebApi.Extensions
 {
     public static class ServicesExtensions
@@ -15,7 +15,7 @@ namespace WebApi.Extensions
             services.AddScoped<IRepositoryManager, RepositoryManager>();
 
         public static void ConfigreServiceManager(this IServiceCollection services) =>
-            services.AddScoped<IServiceManager, IServiceManager>();
+            services.AddScoped<IServiceManager, ServiceManager>();
         
 
 
